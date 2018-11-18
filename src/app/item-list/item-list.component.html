@@ -1,0 +1,16 @@
+<p>
+  item-list works!
+</p>
+<!-- <div *ngIf="items">
+  <img src="{{items.data.avatar}}" /><br/>
+  {{items.data.first_name}}<br/>
+  {{items.data.last_name}}
+</div> -->
+
+<div *ngFor="let item of items">
+  {{item.name}}<br/>
+  {{item.email}}<br/>
+  {{item.image}}<br/>
+  {{url}}<br/>
+  <img [src]="url+item.image" />
+</div>
